@@ -1,4 +1,5 @@
 <can-import from="place-my-order/models/restaurant"/>
+<can-import from="place-my-order/profile/"/>
 <can-component tag="pmo-restaurant-details">
   <template>
     <restaurant-model get="{ _id=slug }">
@@ -41,6 +42,9 @@
         </p>
       </div>
       {{/value}}
+
+      <pmo-profile />
+
       {{/if}}
     </restaurant-model>
   </template>
