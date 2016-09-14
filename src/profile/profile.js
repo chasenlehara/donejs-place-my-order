@@ -18,7 +18,9 @@ export default Component.extend({
   template: template,
   events: {
     inserted: function() {
-      console.timeStamp('Profile component inserted');
+      if (console && console.timeStamp) {
+        console.timeStamp('Profile component inserted');
+      }
     }
   }
 });
