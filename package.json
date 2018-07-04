@@ -14,7 +14,9 @@
     "start": "done-serve --proxy http://localhost:7070 --port 8080",
     "develop": "done-serve --develop --proxy http://localhost:7070 --port 8080",
     "document": "documentjs",
-    "build": "node build"
+    "build": "node build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "0.12.7"
@@ -54,14 +56,15 @@
     "done-autorender": "^0.7.3",
     "done-component": "^0.4.0",
     "done-css": "^2.0.2",
-    "done-serve": "^0.1.0",
-    "generator-donejs": "^0.8.0",
+    "done-serve": "^1.0.0",
+    "generator-donejs": "^1.0.0",
     "jquery": "2.2.1",
     "place-my-order-api": "^0.4.4",
     "place-my-order-assets": "^0.1.7",
     "steal": "^0.15.0",
     "steal-platform": "0.0.4",
-    "steal-socket.io": "^2.0.0"
+    "steal-socket.io": "^2.0.0",
+    "snyk": "^1.88.1"
   },
   "devDependencies": {
     "can-fixture": "^0.1.2",
@@ -104,5 +107,6 @@
         }
       }
     }
-  }
+  },
+  "snyk": true
 }
