@@ -59,7 +59,7 @@
     "jquery": "2.2.1",
     "place-my-order-api": "^0.4.4",
     "place-my-order-assets": "^0.1.7",
-    "steal": "^0.15.0",
+    "steal": "^1.0.0",
     "steal-platform": "0.0.4",
     "steal-socket.io": "^2.0.0"
   },
